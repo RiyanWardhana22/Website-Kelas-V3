@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ilmu Komputer | 23 A</title>
+    <link rel="icon" href="./img/logo.png" />
+
+    <!-- Box Icons Start -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Box Icons End -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Design Start -->
+    <header class="header">
+      <h1 class="logo">KELAS <span class="multiple-text"></span></h1>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home"><i class="bx bxs-home"></i> Home</a>
+        <a href="#profil"><i class="bx bxs-user-circle"></i> Profil</a>
+        <a href="#galeri"><i class="bx bxs-image-alt"></i> Galeri</a>
+        <a href="#timetable"><i class="bx bxs-time"></i> Jadwal</a>
+      </nav>
+    </header>
+    <!-- Header Design End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>SELAMAT DATANG DI</h1>
+        <h3>KELAS 23A <span>ILMU KOMPUTER</span></h3>
+      </main>
+    </section>
+
+    <!-- Hero Section End -->
+
+    <!-- Profile Section Start -->
+    <section class="about" id="profil">
+      <div class="about-img">
+        <img src="/img/coding1.png" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">PROFIL <span>KELAS</span></h2>
+        <p class="content">
+          Welcome to Kelas 23 A Prodi Ilmu Komputer Universitas Negeri Medan,
+          yang mendalami tentang teknologi mutakhir dan memperlihatkan prospek
+          kerja yang luas di berbagai sektor. Dengan fokus pada pemrograman,
+          kecerdasan buatan, dan perkembangan teknologi, oleh karena itu kelas
+          ini akan meraih kesuksesan dalam era digital yang terus berkembang.
+        </p>
+        <p class="content">
+          ◉ Komisaris Tingkat : Sovantri Putra Paskah Halawa
+        </p>
+        <p class="content">◉ Sekretaris : Yusmita Imelda</p>
+        <p class="content">◉ Bendahara : Yunita Rahmi</p>
+        <p class="content">◉ Total Mahasiswa : 40 Orang</p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/comp.sains_23a/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://discord.gg/prgueH9TcU"
+            ><i class="bx bxl-discord-alt"></i
+          ></a>
+          <a href="https://youtube.com/@23AIlmukomputer?si=os3jcuQ-7QlES6jb"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#2e4053"
+        fill-opacity="1"
+        d="M0,192L60,197.3C120,203,240,213,360,213.3C480,213,600,203,720,186.7C840,171,960,149,1080,154.7C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- Profile Section End -->
+
+    <!-- Galeri Section Start -->
+    <section class="slider" id="galeri">
+      <h1 class="galeri">GALERI <span>KELAS</span></h1>
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="./img/galeri/galeri 1.png" alt="Foto 1" />
+        </div>
+        <div class="slide">
+          <img src="./img/galeri/galeri 2.jpg" alt="Foto 2" />
+        </div>
+        <div class="slide">
+          <img src="./img/galeri/galeri 3.jpg" alt="Foto 3" />
+        </div>
+        <div class="slide">
+          <img src="./img/galeri/galeri 4.jpg" alt="" />
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+      </div>
+    </section>
+    <!-- Galeri Section End -->
+
+    <!-- Timetable Section Start -->
+    <section class="timetable" id="timetable">
+      <h1 class="timetable">JADWAL <span> KELAS 23A</span></h1>
+      <button class="toggle-button"><b>SENIN</b></button>
+      <div class="hidden-element" id="senin">
+        <p><b>MATA KULIAH</b> : Matematika Dasar</p>
+        <p><b>RUANG</b> : 77.3.01</p>
+        <p><b>TOTAL SKS</b> : 3 SKS</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p>
+          <b>DOSEN</b> : Tri Andri Hutapea, S.Si., M.Sc. / Sisti Nadia Amalia,
+          S.Pd., M.Stat
+        </p>
+        <!-- PEMBATAS  -->
+        <div class="second-matkul">
+          <p><b id="biru">MATA KULIAH</b> : Praktikum Fisika Dasar</p>
+          <p><b id="biru">RUANG</b> : Lab Fisika, 175.3.03</p>
+          <p><b id="biru">WAKTU</b> : 10:30 - 13:00 WIB</p>
+          <p>
+            <b id="biru">DOSEN</b> : Drs. Juniar Hutahean, M.Si / Eviyona
+            Luarenta Br. Barus, S.pd., M.S.
+          </p>
+        </div>
+        <div class="second-matkul">
+          <p><b>MATA KULIAH</b> : Bahasa Inggris</p>
+          <p><b>RUANG</b> : 12.2.15</p>
+          <p><b>TOTAL SKS</b> : 2 SKS</p>
+          <p><b>WAKTU</b> : 14:40 - 16:20 WIB</p>
+          <p><b>DOSEN</b> : Mangaratua Marianus Simanjorang, M.Pd., Ph.D.</p>
+        </div>
+      </div>
+      <button class="toggle-button"><b>SELASA</b></button>
+      <div class="hidden-element" id="selasa">
+        <p><b>MATA KULIAH</b> : Matematika Dasar</p>
+        <p><b>RUANG</b> : 12.2.12</p>
+        <p><b>TOTAL SKS</b> : 3 SKS</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p>
+          <b>DOSEN</b> : Tri Andri Hutapea, S.Si., M.Sc. / Sisti Nadia Amalia,
+          S.Pd., M.Stat
+        </p>
+        <!-- PEMBATAS  -->
+        <div class="second-matkul">
+          <p><b id="biru">MATA KULIAH</b> : Kalkulus Diferensial</p>
+          <p><b id="biru">RUANG</b> : 77.3.01</p>
+          <p><b id="biru"> TOTAL SKS</b> : 3 SKS</p>
+          <p><b id="biru">WAKTU</b> : 10:30 - 13:00 WIB</p>
+          <p><b id="biru">DOSEN</b> : Nice Rejoice Refisis, S.Pd., M.Si.</p>
+        </div>
+        <div class="second-matkul">
+          <p><b>MATA KULIAH</b> : Algoritma Dan Pemrograman</p>
+          <p><b>RUANG</b> : 77.2.01</p>
+          <p><b>TOTAL SKS</b> : 3 SKS</p>
+          <p><b>WAKTU</b> : 13:50 - 16:20 WIB</p>
+          <p><b>DOSEN</b> : Said Iskandar Al Idrus, S.Si., M.Si</p>
+        </div>
+      </div>
+      <button class="toggle-button"><b>RABU</b></button>
+      <div class="hidden-element" id="rabu">
+        <p><b>MATA KULIAH</b> : Logika Informatika</p>
+        <p><b>RUANG</b> : 192.2.11</p>
+        <p><b>TOTAL SKS</b> : 3 SKS</p>
+        <p><b>WAKTU</b> : 14:40 - 17:10 WIB</p>
+        <p>
+          <b>DOSEN</b> : Dr. Hermawan Syahputra, S.Si., M.Si / Fanny Ramadhani,
+          S.Kom., M.Kom
+        </p>
+      </div>
+      <button class="toggle-button"><b>KAMIS</b></button>
+      <div class="hidden-element" id="kamis">
+        <p><b>MATA KULIAH</b> : Fisika Dasar</p>
+        <p><b>RUANG</b> : 77.3.01</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p>
+          <b>DOSEN</b> : Drs. Juniar Hutahean, M.Si / Eviyona Luarenta Br.
+          Barus, S.pd., M.S.
+        </p>
+      </div>
+      <!-- PEMBATAS  -->
+      <button class="toggle-button"><b>JUMAT</b></button>
+      <div class="hidden-element" id="jumat">
+        <p><b>MATA KULIAH</b> : Kepemimpinan</p>
+        <p><b>RUANG</b> : 77.1.01</p>
+        <p><b>TOTAL SKS</b> : 2 SKS</p>
+        <p><b>WAKTU</b> : 08:00 - 09:40 WIB</p>
+        <p><b>DOSEN</b> : Said Iskandar Al Idrus, S.Si., M.Si</p>
+        <!-- PEMBATAS  -->
+        <div class="second-matkul">
+          <p>
+            <b id="biru">MATA KULIAH</b> : Teknologi Informasi Dan Literasi Data
+          </p>
+          <p><b id="biru">RUANG</b> : 77.3.08</p>
+          <p><b id="biru">TOTAL SKS</b> : 2 SKS</p>
+          <p><b id="biru">WAKTU</b> : 10:30 - 12:11 WIB</p>
+          <p><b id="biru">DOSEN</b> : Zulfahmi Indra, S.Si., M.Cs.</p>
+        </div>
+      </div>
+    </section>
+    <div class="update">
+      <p>* Diupdate pada 20/11/2023 | 21:00 WIB</p>
+    </div>
+    <!-- Timetable Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>
+          Created By <span><b>Riyan Wardhana </b></span>
+          | &copy; 2023
+        </p>
+        <div class="social-media-footer">
+          <a href="https://www.instagram.com/riyanwrdhna22/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://wa.me/+6281260426431/?text=Hai"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-chevrons-up"></i></a>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Type Js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
